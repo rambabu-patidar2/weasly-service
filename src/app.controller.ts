@@ -22,4 +22,8 @@ export class AppController {
   getJoke(): string {
     return this.appService.getJoke();
   }
+  @Get('quote')
+  getQuote(): string {
+    return this.appService.getQuote();
+  }
 }

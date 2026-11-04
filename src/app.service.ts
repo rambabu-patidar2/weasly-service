@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { slugify, tellJoke } from '@rambabu-patidar2/utility-sdk';
+import { slugify, tellJoke, doGoodThingsQuote } from '@rambabu-patidar2/utility-sdk';
 
 @Injectable()
 export class AppService {
@@ -13,5 +13,8 @@ export class AppService {
 
   getJoke(): string {
     return tellJoke();
+  }
+  getQuote(): string {
+    return doGoodThingsQuote();
   }
 }
