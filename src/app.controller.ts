@@ -17,4 +17,9 @@ export class AppController {
     }
     return { slug: this.appService.toSlug(title) };
   }
+
+  @Get('quote')
+  getQuote(): string {
+    return this.appService.getQuote();
+  }
 }
